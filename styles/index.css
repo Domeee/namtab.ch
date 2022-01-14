@@ -24,15 +24,6 @@
 }
 
 @font-face {
-  font-family: "Bangers";
-  font-style: normal;
-  font-weight: 400;
-  src: local(""),
-    url("../public/fonts/bangers-v13-latin-regular.woff2") format("woff2"),
-    url("../public/fonts/bangers-v13-latin-regular.woff") format("woff");
-}
-
-@font-face {
   font-family: "Grinched";
   font-style: normal;
   font-weight: 400;
