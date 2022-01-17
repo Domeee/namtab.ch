@@ -16,7 +16,7 @@ export default function Input({ name, type, value, ...rest }: InputProps) {
     name: name,
     id: name,
     className:
-      "block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md",
+      "block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-yellow-300 focus:border-yellow-300 border-gray-300 rounded-md",
   };
 
   if (type === "textarea") {

@@ -6,7 +6,7 @@ interface Props {
   customer: string;
   imageAuthor: StaticImageData;
   imageCustomer?: StaticImageData;
-  text: string;
+  text: string | React.ReactNode;
 }
 
 export default function Testimonial({
@@ -18,17 +18,17 @@ export default function Testimonial({
   authorRole,
 }: Props) {
   return (
-    <div className="py-12">
-      {imageCustomer && (
-        <div className="mb-6">
-          <Image src={imageCustomer} alt={customer} />
-        </div>
-      )}
-      <blockquote>
-        <p>{text}</p>
-        <footer className="mt-8">
+    <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+      {imageCustomer && <Image src={imageCustomer} alt={customer} />}
+      <div className="p-6">
+        <blockquote>
+          <p className="before:content-['\201C'] after:content-['\201D']">
+            {text}
+          </p>
+        </blockquote>
+        <div className="mt-8">
           <div className="flex items-start">
-            <div className="flex flex-shrink-0 rounded-full border-2 border-gray-400">
+            <div className="flex flex-shrink-0 rounded-full border-2 border-teal-500">
               <Image
                 className="rounded-full"
                 height={48}
@@ -38,12 +38,12 @@ export default function Testimonial({
               />
             </div>
             <div className="ml-4">
-              <div>{author}</div>
-              <div>{authorRole}</div>
+              <div className="text-sm font-medium">{author}</div>
+              <div className="text-sm">{authorRole}</div>
             </div>
           </div>
-        </footer>
-      </blockquote>
+        </div>
+      </div>
     </div>
   );
 }

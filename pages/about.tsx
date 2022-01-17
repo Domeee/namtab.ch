@@ -1,5 +1,6 @@
 import ContactSection from "components/contactSection";
 import Container from "components/container";
+import { HighlightWhite } from "components/highlight";
 import Testimonial from "components/testimonial";
 import imageAndi from "../public/images/andi.jpg";
 
@@ -9,10 +10,12 @@ export default function About() {
   return (
     <>
       <Container>
-        <p className="quote">
-          &quot;I have no special talent. I am only passionately curious.&quot;
-        </p>
-        <p className="quotee">– Albert Einstein</p>
+        <blockquote>
+          <p className="before:content-['\201C'] after:content-['\201D']">
+            I have no special talent. I am only passionately curious.
+          </p>
+        </blockquote>
+        <p className="text-gray-400">– Albert Einstein</p>
       </Container>
       <Container>
         <h2>Wer bin ich</h2>
@@ -77,18 +80,38 @@ export default function About() {
           alle möglichen Probleme mit Software zu lösen 😆.
         </p>
       </Container>
-      <Container>
-        <Testimonial
-          authorRole="Partner bei crossmind inc."
-          imageAuthor={imageAndi}
-          text="Dominique ist ein leidenschaftlicher Full Stack Architekt, welcher dank seiner dynamischen und sympathischen Art jederzeit erfolgreich in innovativen und agilen Projekten eingesetzt werden kann. Er denkt aktiv mit, bringt sein Know-how mit ein und ist jederzeit auf dem aktuellen Stand was Technologien und Marktentwicklungen anbelangen. Es war eine grosse Freude für mich mit ihm zu arbeiten und ich kann ihn vorbehaltslos weiterempfehlen. Ich wünsche dir weiterhin viel Erfolg und es würde mich freuen, wenn es in Zukunft wieder zu einer Zusammenarbeit kommen würde."
-          author="Andreas Windler"
-          customer="crossmind inc."
-        />
-      </Container>
-      <Container>
-        <ContactSection />
-      </Container>
+      <div className="bg-teal-50">
+        <Container className="py-32">
+          <Testimonial
+            authorRole="Partner bei crossmind inc."
+            imageAuthor={imageAndi}
+            text={
+              <>
+                Dominique ist ein{" "}
+                <HighlightWhite>leidenschaftlicher</HighlightWhite> Full Stack
+                Architekt, welcher dank seiner dynamischen und sympathischen Art{" "}
+                <HighlightWhite>jederzeit</HighlightWhite> erfolgreich in
+                innovativen und agilen Projekten eingesetzt werden kann. Er
+                denkt <HighlightWhite>aktiv</HighlightWhite> mit, bringt sein
+                Know-how mit ein und ist jederzeit auf dem aktuellen Stand was
+                Technologien und Marktentwicklungen anbelangen. Es war eine{" "}
+                <HighlightWhite>grosse</HighlightWhite> Freude für mich mit ihm
+                zu arbeiten und ich kann ihn vorbehaltslos weiterempfehlen. Ich
+                wünsche dir weiterhin viel Erfolg und es würde mich{" "}
+                <HighlightWhite>freuen</HighlightWhite>, wenn es in Zukunft
+                wieder zu einer Zusammenarbeit kommen würde.
+              </>
+            }
+            author="Andreas Windler"
+            customer="crossmind inc."
+          />
+        </Container>
+      </div>
+      <div className="bg-purple-800">
+        <Container className="py-32">
+          <ContactSection />
+        </Container>
+      </div>
     </>
   );
 }
