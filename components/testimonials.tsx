@@ -18,15 +18,14 @@ export default function Testimonials() {
             super unterstützt. Er hat sich{" "}
             <HighlightWhite>extrem</HighlightWhite> schnell in die Thematik
             eingearbeitet und auch ausserhalb seines Fachgebietes{" "}
-            <HighlightWhite>wichtige</HighlightWhite>
-            Inputs geliefert. Durch seine zuverlässige, weitsichtige und
-            termingenaue Arbeitsweise konnten wir uns{" "}
-            <HighlightWhite>voll</HighlightWhite> und ganz auf Ihn verlassen und
-            unseren Fokus auf andere Aspekte des Projektes legen. Die{" "}
-            <HighlightWhite>äusserst</HighlightWhite> angenehme Zusammenarbeit
-            rundet den sehr guten Eindruck ab, sodass ich Dominique
-            vorbehaltslos weiterempfehlen kann und mich auf weitere gemeinsame
-            Projekte <HighlightWhite>freue</HighlightWhite>.
+            <HighlightWhite>wichtige</HighlightWhite> Inputs geliefert. Durch
+            seine zuverlässige, weitsichtige und termingenaue Arbeitsweise
+            konnten wir uns <HighlightWhite>voll</HighlightWhite> und ganz auf
+            Ihn verlassen und unseren Fokus auf andere Aspekte des Projektes
+            legen. Die <HighlightWhite>äusserst</HighlightWhite> angenehme
+            Zusammenarbeit rundet den sehr guten Eindruck ab, sodass ich
+            Dominique vorbehaltslos weiterempfehlen kann und mich auf weitere
+            gemeinsame Projekte <HighlightWhite>freue</HighlightWhite>.
           </>
         }
         author="Florian Thut"

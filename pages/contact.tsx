@@ -1,11 +1,14 @@
 import { MailIcon, PhoneIcon } from "@heroicons/react/outline";
-import ContactForm from "components/contactForm";
 import Container from "components/container";
 import Link from "components/link";
+import Head from "next/head";
 
 export default function Contact() {
   return (
     <div>
+      <Head>
+        <title>Namtab - Kontakt</title>
+      </Head>
       <Container className="pb-32">
         <h2>Ich freue mich auf deine Nachricht!</h2>
         <p className="mt-3">
@@ -51,11 +54,6 @@ export default function Contact() {
           </div>
         </dl>
       </Container>
-      <div className="bg-purple-800">
-        <Container className="py-32">
-          <ContactForm />
-        </Container>
-      </div>
     </div>
   );
 }

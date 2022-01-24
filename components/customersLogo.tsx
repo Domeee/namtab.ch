@@ -16,11 +16,11 @@ const customers = [
   { image: imageTeko, alt: "TEKO" },
   { image: imageToledo, alt: "Mettler Toledo" },
 ].map((c, i) => (
-  <div key={i} className="mr-1 mb-1">
+  <div key={i} className="mr-2 mb-8">
     <Image src={c.image} alt={c.alt} />
   </div>
 ));
 
 export default function CustomersLogo() {
-  return <div className="flex flex-wrap justify-around">{customers}</div>;
+  return <div className="flex flex-wrap justify-around -mb-8">{customers}</div>;
 }

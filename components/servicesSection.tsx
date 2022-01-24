@@ -19,101 +19,125 @@ export default function ServicesSection() {
           gerne dabei.
         </p>
         <div>
-          <h2 className="pb-4 text-white">Software Entwicklung</h2>
+          <h2 className="text-white">Software Entwicklung</h2>
           <dl className="space-y-5">
-            <div>
-              <dt>
-                <CodeIcon
-                  className="absolute h-6 w-6 text-white"
-                  aria-hidden="true"
-                />
-              </dt>
-              <dd className="mt-2 ml-9 text-base text-purple-200">
-                <H>Full Stack Software Entwicklung</H> von Web & Mobile Apps
-              </dd>
-            </div>
-            <div>
-              <dt>
-                <CubeTransparentIcon
-                  className="absolute h-6 w-6 text-white"
-                  aria-hidden="true"
-                />
-              </dt>
-              <dd className="mt-2 ml-9 text-base text-purple-200">
-                <H>Rapid Prototyping</H> und <H>Produktententwicklung</H> nach
-                Lean Startup
-              </dd>
-            </div>
-            <div>
-              <dt>
-                <AcademicCapIcon
-                  className="absolute h-6 w-6 text-white"
-                  aria-hidden="true"
-                />
-              </dt>
-              <dd className="mt-2 ml-9 text-base text-purple-200">
-                Themenspezifisches <H>Coaching</H>
-              </dd>
-            </div>
-            <div>
-              <dt>
-                <ClipboardListIcon
-                  className="absolute h-6 w-6 text-white"
-                  aria-hidden="true"
-                />
-              </dt>
-              <dd className="mt-2 ml-9 text-base text-purple-200">
-                <H>Technische Projektleitung</H> und{" "}
-                <H>fachliche Teamleitung</H>
-              </dd>
-            </div>
+            {services.software.map((s, i) => (
+              <div key={i}>
+                <dt>{s.icon}</dt>
+                <dd className="mt-2 ml-9 text-purple-200">{s.text}</dd>
+              </div>
+            ))}
           </dl>
         </div>
         <div>
-          <h2 className="pb-4 text-white">Game Design</h2>
+          <h2 className="text-white">Game Design</h2>
           <dl className="space-y-5">
-            <div>
-              <dt>
-                <PuzzleIcon
-                  className="absolute h-6 w-6 text-white"
-                  aria-hidden="true"
-                />
-              </dt>
-              <dd className="mt-2 ml-9 text-base text-purple-200">
-                <H>Design</H> und <H>Entwicklung</H>von Video Games, Serious
-                Games und Simulationen
-              </dd>
-            </div>
-            <div>
-              <dt>
-                <ThumbUpIcon
-                  className="absolute h-6 w-6 text-white"
-                  aria-hidden="true"
-                />
-              </dt>
-              <dd className="mt-2 ml-9 text-base text-purple-200">
-                <H>Gamification</H> von von Produkten und Dienstleistungen
-              </dd>
-            </div>
-            <div>
-              <dt>
-                <AcademicCapIcon
-                  className="absolute h-6 w-6 text-white"
-                  aria-hidden="true"
-                />
-              </dt>
-              <dd className="mt-2 ml-9 text-base text-purple-200">
-                Game Design und Game Entwicklung <H>Coaching</H>
-              </dd>
-            </div>
+            {services.game.map((s, i) => (
+              <div key={i}>
+                <dt>{s.icon}</dt>
+                <dd className="mt-2 ml-9 text-purple-200">{s.text}</dd>
+              </div>
+            ))}
           </dl>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
         </div>
       </div>
     </>
   );
 }
+
+const services = {
+  software: [
+    {
+      icon: (
+        <CodeIcon className="absolute h-6 w-6 text-white" aria-hidden="true" />
+      ),
+      text: (
+        <>
+          <H>Full Stack Software Entwicklung</H> von Web & Mobile Apps)
+        </>
+      ),
+    },
+    {
+      icon: (
+        <CubeTransparentIcon
+          className="absolute h-6 w-6 text-white"
+          aria-hidden="true"
+        />
+      ),
+      text: (
+        <>
+          <H>Rapid Prototyping</H> und <H>Produktententwicklung</H> nach Lean
+          Startup
+        </>
+      ),
+    },
+    {
+      icon: (
+        <AcademicCapIcon
+          className="absolute h-6 w-6 text-white"
+          aria-hidden="true"
+        />
+      ),
+      text: (
+        <>
+          Themenspezifisches <H>Coaching</H>
+        </>
+      ),
+    },
+    {
+      icon: (
+        <ClipboardListIcon
+          className="absolute h-6 w-6 text-white"
+          aria-hidden="true"
+        />
+      ),
+      text: (
+        <>
+          <H>Technische Projektleitung</H> und <H>fachliche Teamleitung</H>
+        </>
+      ),
+    },
+  ],
+  game: [
+    {
+      icon: (
+        <PuzzleIcon
+          className="absolute h-6 w-6 text-white"
+          aria-hidden="true"
+        />
+      ),
+      text: (
+        <>
+          <H>Design</H> und <H>Entwicklung</H> von Video Games, Serious Games
+          und Simulationen
+        </>
+      ),
+    },
+    {
+      icon: (
+        <ThumbUpIcon
+          className="absolute h-6 w-6 text-white"
+          aria-hidden="true"
+        />
+      ),
+      text: (
+        <>
+          <H>Gamification</H> von von Produkten und Dienstleistungen
+        </>
+      ),
+    },
+    {
+      icon: (
+        <AcademicCapIcon
+          className="absolute h-6 w-6 text-white"
+          aria-hidden="true"
+        />
+      ),
+      text: (
+        <>
+          Game Design und Game Entwicklung <H>Coaching</H>
+        </>
+      ),
+    },
+  ],
+};

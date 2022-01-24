@@ -3,14 +3,17 @@
 @tailwind utilities;
 
 @layer base {
+  a {
+    @apply cursor-pointer;
+  }
   h1 {
-    @apply text-6xl font-extrabold tracking-tight;
+    @apply text-4xl font-semibold leading-normal;
   }
   h2 {
-    @apply text-4xl font-extrabold tracking-tight;
+    @apply text-4xl font-extrabold tracking-tight mb-4;
   }
   h3 {
-    @apply text-3xl font-extrabold tracking-tight;
+    @apply text-3xl font-extrabold tracking-tight mb-3;
   }
   h4 {
     @apply text-2xl font-extrabold tracking-tight;
@@ -19,7 +22,16 @@
     @apply text-xl;
   }
   h6 {
-    @apply text-sm uppercase font-bold;
+    @apply text-lg uppercase font-bold;
+  }
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+  p {
+    @apply mb-2 text-lg;
+  }
+  dd {
+    @apply text-lg;
   }
 }
 
