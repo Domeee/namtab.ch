@@ -1,11 +1,10 @@
-import Image from "next/image";
-
+/* eslint-disable @next/next/no-img-element */
 interface Props {
   author: string;
   authorRole: string;
   customer: string;
-  imageAuthor: StaticImageData;
-  imageCustomer?: StaticImageData;
+  imageAuthor: string;
+  imageCustomer?: string;
   text: string | React.ReactNode;
 }
 
@@ -19,7 +18,7 @@ export default function Testimonial({
 }: Props) {
   return (
     <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-      {imageCustomer && <Image src={imageCustomer} alt={customer} />}
+      {imageCustomer && <img src={imageCustomer} alt={customer} />}
       <div className="p-6">
         <blockquote>
           <p className="before:content-['\201C'] after:content-['\201D']">
@@ -29,7 +28,7 @@ export default function Testimonial({
         <div className="mt-8">
           <div className="flex items-start">
             <div className="flex flex-shrink-0 rounded-full border-2 border-teal-500">
-              <Image
+              <img
                 className="rounded-full"
                 height={48}
                 width={48}

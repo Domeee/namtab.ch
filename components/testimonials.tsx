@@ -1,7 +1,3 @@
-import imagePost from "../public/images/logo-post.png";
-import imageFlo from "../public/images/flo.jpg";
-import imageIa from "../public/images/logo-ia.png";
-import imageDaniel from "../public/images/daniel.jpg";
 import Testimonial from "components/testimonial";
 import { HighlightWhite } from "components/highlight";
 
@@ -10,8 +6,8 @@ export default function Testimonials() {
     <div className="space-y-10">
       <Testimonial
         authorRole="Head of Digital Product Management, Die Schweizerische Post"
-        imageAuthor={imageFlo}
-        imageCustomer={imagePost}
+        imageAuthor="/images/flo.jpg"
+        imageCustomer="/images/logo-post.png"
         text={
           <>
             Bei der Umsetzung unseres Innovationsprojektes hat uns Dominique
@@ -33,8 +29,8 @@ export default function Testimonials() {
       />
       <Testimonial
         authorRole="Senior Partner, INNOArchitects"
-        imageAuthor={imageDaniel}
-        imageCustomer={imageIa}
+        imageAuthor="/images/daniel.jpg"
+        imageCustomer="/images/logo-ia.png"
         text={
           <>
             Dominique erarbeitet in einem{" "}

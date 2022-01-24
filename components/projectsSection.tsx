@@ -1,9 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
 import A from "components/a";
 import { HighlightWhite as H } from "components/highlight";
-import Image from "next/image";
-import imageCrowdie from "../public/images/crowdie.jpg";
-import imageEnerjoy from "../public/images/enerjoy.png";
-import imageTeko from "../public/images/teko.png";
 
 export default function ProjectsSection() {
   const projectCards = projects.map((p) => {
@@ -20,7 +17,7 @@ export default function ProjectsSection() {
         key={p.name}
         className="rounded-lg shadow-lg overflow-hidden bg-white"
       >
-        <Image src={p.image} alt="Crowdie" />
+        <img src={p.image} alt="Crowdie" />
         <div className="p-6">
           <div className="grid gap-1 grid-flow-row grid-cols-3">{labels}</div>
           <h3 className="mt-6">{p.title}</h3>
@@ -48,7 +45,7 @@ export default function ProjectsSection() {
 const projects = [
   {
     name: "enerjoy",
-    image: imageEnerjoy,
+    image: "/images/enerjoy.png",
     title: "enerjoy",
     links: [
       {
@@ -74,7 +71,7 @@ const projects = [
   },
   {
     name: "teko",
-    image: imageTeko,
+    image: "/images/teko.png",
     title: "TEKO NDS Game Design",
     links: [
       {
@@ -97,7 +94,7 @@ const projects = [
   },
   {
     name: "crowdie",
-    image: imageCrowdie,
+    image: "/images/crowdie.jpg",
     title: "Crowdie",
     description: (
       <span>

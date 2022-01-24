@@ -1,14 +1,12 @@
+/* eslint-disable @next/next/no-img-element */
 import A from "components/a";
 import ContactSection from "components/contactSection";
 import Container from "components/container";
 import { HighlightWhite } from "components/highlight";
 import Section from "components/section";
 import Testimonial from "components/testimonial";
-import imageAndi from "../public/images/andi.jpg";
-import imageHubi from "../public/images/donhubi.jpg";
 import { HighlightPurple as HP } from "components/highlight";
 import { HighlightWhite as HW } from "components/highlight";
-import Image from "next/image";
 import Head from "next/head";
 
 export default function About() {
@@ -23,7 +21,7 @@ export default function About() {
         <Container>
           <Section>
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <Image src={imageHubi} alt="Dominique Huber" />
+              <img src="/images/donhubi.jpg" alt="Dominique Huber" />
               <div className="px-6">
                 <span className="text-xs text-gray-400">
                   Weltrekordversuch im Kinderbecherstapeln, Januar 2022
@@ -120,7 +118,7 @@ export default function About() {
           <Section>
             <Testimonial
               authorRole="Partner bei crossmind inc."
-              imageAuthor={imageAndi}
+              imageAuthor="/images/andi.jpg"
               text={
                 <>
                   Dominique ist ein{" "}
