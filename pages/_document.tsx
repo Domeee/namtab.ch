@@ -8,6 +8,7 @@ export default function MyDocument() {
           name="description"
           content="Ich unterstütze Unternehmen bei der Entwicklung von Web & Mobile Apps sowie Games."
         />
+        <link rel="icon" href="/images/favicon.ico" />
         <link rel="canonical" href="https://namtab.ch" />
         <meta property="og:type" content="website" />
         <meta

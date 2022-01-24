@@ -22,7 +22,7 @@ export default function Header() {
         type="checkbox"
         checked={isChecked}
         className="fixed top-0 right-0 h-16 w-16 cursor-pointer opacity-0 z-30 peer"
-        onClick={toggleCheckbox}
+        onChange={toggleCheckbox}
       />
       <div className="fixed top-[20px] right-5 h-2 w-8 bg-teal-500 z-20 origin-[0%_0%] transition peer-checked:rotate-45 peer-checked:translate-x-[8px] peer-checked:translate-y-[2px] peer-checked:bg-white" />
       <div className="fixed top-[32px] right-5 h-2 w-8 bg-teal-500 z-20 transition peer-checked:opacity-0" />
