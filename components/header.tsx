@@ -12,7 +12,7 @@ export default function Header() {
   }
 
   return (
-    <header className="mb-40">
+    <header className="mb-28 sm:mb-40">
       <Container className="flex justify-between items-end pt-5">
         <Link href="/">
           <span className="font-logo text-6xl uppercase">namtab</span>

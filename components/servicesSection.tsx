@@ -122,7 +122,7 @@ const services = {
       ),
       text: (
         <>
-          <H>Gamification</H> von von Produkten und Dienstleistungen
+          <H>Gamification</H> von Produkten und Dienstleistungen
         </>
       ),
     },

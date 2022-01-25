@@ -71,7 +71,7 @@ export default function About() {
             Für die serverseitige Programmierung von unternehmenskritischen
             Anwendungen setze ich auf das Ökosystem rund um <HW>Elixir</HW>. Mit
             Elixir als Programmiersprache, <HW>Erlang</HW> VM als Runtime,{" "}
-            <HW>Phoenix Framework</HW> für Web APIs und <HW>PostgreSQL </HW> als
+            <HW>Phoenix Framework</HW> für Web APIs und <HW>PostgreSQL</HW> als
             Datenbank bietet Elixir eine hervorragende Umgebung für langfristige
             Lösungen.
           </p>
@@ -85,7 +85,9 @@ export default function About() {
             Viable Products, setzte ich auf <HW>Backend-as-a-Service</HW>{" "}
             Technologien wie <HW>Supabase</HW>.
           </p>
-          <p>Games entwickle ich basierend auf der Unity Game Engine.</p>
+          <p>
+            Games entwickle ich basierend auf der <HW>Unity</HW> Game Engine.
+          </p>
         </Section>
       </Container>
       <div className="bg-purple-800">
@@ -106,9 +108,9 @@ export default function About() {
             </p>
             <p className="text-purple-200">
               Aber auch in der Freizeit kann ich es mit der{" "}
-              <HP>Software Entwicklung</HP>
-              nicht sein lassen. Ich liebe es neue Technologien auszuprobieren
-              und alle möglichen Probleme mit Software zu lösen 😆
+              <HP>Software Entwicklung</HP> nicht sein lassen. Ich liebe es neue
+              Technologien auszuprobieren und alle möglichen Probleme mit
+              Software zu lösen 😆
             </p>
           </Section>
         </Container>

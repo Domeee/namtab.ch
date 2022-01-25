@@ -64,7 +64,7 @@ const projects = [
       "React Native",
       "TypeScript",
       "Elixir",
-      "Phoenix Framework",
+      "Phoenix",
       "PosgreSQL",
       "Lean Startup",
     ],
@@ -90,7 +90,7 @@ const projects = [
         <H>Game Programming</H>.
       </span>
     ),
-    labels: ["Game Design", "Game Entwicklung", "Unity", "Coaching"],
+    labels: ["Game Design", "Game Dev", "Unity", "Coaching"],
   },
   {
     name: "crowdie",
