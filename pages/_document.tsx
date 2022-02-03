@@ -4,6 +4,34 @@ export default function MyDocument() {
   return (
     <Html>
       <Head>
+        <link
+          rel="preload"
+          href="/fonts/grinched.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin=""
+        />
+        <link
+          rel="preload"
+          href="/fonts/grinched.woff"
+          as="font"
+          type="font/woff"
+          crossOrigin=""
+        />
+        <link
+          rel="preload"
+          href="/fonts/inter-v7-latin-600.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin=""
+        />
+        <link
+          rel="preload"
+          href="/fonts/inter-v7-latin-600.woff"
+          as="font"
+          type="font/woff"
+          crossOrigin=""
+        />
         <meta
           name="description"
           content="Ich unterstütze Unternehmen bei der Entwicklung von Web & Mobile Apps sowie Games."
