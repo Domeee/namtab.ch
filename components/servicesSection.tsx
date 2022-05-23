@@ -53,7 +53,7 @@ const services = {
       ),
       text: (
         <>
-          <H>Full Stack Software Entwicklung</H> von Web & Mobile Apps)
+          <H>Full Stack Software Entwicklung</H> von Web & Mobile Apps
         </>
       ),
     },

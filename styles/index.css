@@ -41,6 +41,7 @@
   font-weight: 400;
   src: local(""), url("/fonts/grinched.woff2") format("woff2"),
     url("/fonts/grinched.woff") format("woff");
+  font-display: swap;
 }
 
 /* inter-100 - latin */
@@ -51,6 +52,7 @@
   src: local(""), url("/fonts/inter-v7-latin-100.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
       url("/fonts/inter-v7-latin-100.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-display: swap;
 }
 
 /* inter-200 - latin */
@@ -61,6 +63,7 @@
   src: local(""), url("/fonts/inter-v7-latin-200.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
       url("/fonts/inter-v7-latin-200.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-display: swap;
 }
 
 /* inter-300 - latin */
@@ -71,6 +74,7 @@
   src: local(""), url("/fonts/inter-v7-latin-300.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
       url("/fonts/inter-v7-latin-300.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-display: swap;
 }
 
 /* inter-regular - latin */
@@ -81,6 +85,7 @@
   src: local(""), url("/fonts/inter-v7-latin-regular.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
       url("/fonts/inter-v7-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-display: swap;
 }
 
 /* inter-500 - latin */
@@ -91,6 +96,7 @@
   src: local(""), url("/fonts/inter-v7-latin-500.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
       url("/fonts/inter-v7-latin-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-display: swap;
 }
 
 /* inter-600 - latin */
@@ -101,6 +107,7 @@
   src: local(""), url("/fonts/inter-v7-latin-600.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
       url("/fonts/inter-v7-latin-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-display: swap;
 }
 
 /* inter-700 - latin */
@@ -111,6 +118,7 @@
   src: local(""), url("/fonts/inter-v7-latin-700.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
       url("/fonts/inter-v7-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-display: swap;
 }
 
 /* inter-800 - latin */
@@ -121,6 +129,7 @@
   src: local(""), url("/fonts/inter-v7-latin-800.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
       url("/fonts/inter-v7-latin-800.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-display: swap;
 }
 
 /* inter-900 - latin */
@@ -131,4 +140,5 @@
   src: local(""), url("/fonts/inter-v7-latin-900.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
       url("/fonts/inter-v7-latin-900.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-display: swap;
 }

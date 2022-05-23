@@ -17,11 +17,14 @@ export default function ProjectsSection() {
         key={p.name}
         className="rounded-lg shadow-lg overflow-hidden bg-white"
       >
-        <img src={p.image} alt="Crowdie" />
+        <img src={p.image} alt={p.title} />
         <div className="p-6">
           <div className="grid gap-1 grid-flow-row grid-cols-3">{labels}</div>
           <h3 className="mt-6">{p.title}</h3>
           <p>{p.description}</p>
+          <div>
+            <p>Rollen: {p.roles.join(", ")}</p>
+          </div>
           {p.links &&
             p.links.map((l, i) => (
               <div className="mt-3" key={i}>
@@ -45,7 +48,7 @@ export default function ProjectsSection() {
 const projects = [
   {
     name: "enerjoy",
-    image: "/images/enerjoy.png",
+    image: "/images/enerjoy.webp",
     title: "enerjoy",
     links: [
       {
@@ -55,11 +58,14 @@ const projects = [
     ],
     description: (
       <span>
-        enerjoy schafft durch Tracking der alltäglichen Handlungen Transparenz
-        zum eigenen CO2-Footprint und zeigt dank intelligenten Algorithmen auf,
-        wie dieser persönlich am besten reduziert werden kann.
+        enerjoy ist ein personalisierbarer <H>CO2-Fussabdruck Coach</H>.
+        Privatanwender reduzieren mit Hilfe von individuellen Tipps und
+        Challenges ihren Fussabdruck spielend einfach. Mit der enerjoy
+        B2B-Plattform haben Geschäftskunden ein Werkzeug, um die Emissionen
+        ihrer Mitarbeitenden auszuwerten und auszugleichen.
       </span>
     ),
+    roles: ["CTO", "Lead Software Engineer"],
     labels: [
       "React Native",
       "TypeScript",
@@ -71,7 +77,7 @@ const projects = [
   },
   {
     name: "teko",
-    image: "/images/teko.png",
+    image: "/images/teko.webp",
     title: "TEKO NDS Game Design",
     links: [
       {
@@ -90,11 +96,26 @@ const projects = [
         <H>Game Programming</H>.
       </span>
     ),
+    roles: ["Dozent"],
     labels: ["Game Design", "Game Dev", "Unity", "Coaching"],
   },
   {
+    name: "lab_invaders",
+    image: "/images/lab-invaders.webp",
+    title: "Lab Invaders",
+    description: (
+      <span>
+        Lab Invaders ist ein HTML5 basiertes Browser-Game. Das Verkaufspersonal
+        von Mettler Toledo wurde so auf spielerische Art und Weise über die neue
+        Produktelinie informiert, welche im Herbst 2018 eingeführt wurde.
+      </span>
+    ),
+    roles: ["Game Designer", "Game Developer"],
+    labels: ["Game Design", "Game Dev", "Unity"],
+  },
+  {
     name: "crowdie",
-    image: "/images/crowdie.jpg",
+    image: "/images/crowdie.webp",
     title: "Crowdie",
     description: (
       <span>
@@ -104,6 +125,7 @@ const projects = [
         Partner.
       </span>
     ),
+    roles: ["CTO", "Lead Software Engineer"],
     labels: ["MetorJS", "JavaScript", "React", "Lean Startup"],
   },
 ];

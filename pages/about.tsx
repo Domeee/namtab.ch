@@ -21,7 +21,12 @@ export default function About() {
         <Container>
           <Section>
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <img src="/images/donhubi.jpg" alt="Dominique Huber" />
+              <img
+                src="/images/donhubi.webp"
+                alt="Dominique Huber"
+                height={603}
+                width={773}
+              />
               <div className="px-6">
                 <span className="text-xs text-gray-400">
                   Weltrekordversuch im Kinderbecherstapeln, Januar 2022
@@ -64,8 +69,7 @@ export default function About() {
             >
               Open Source Software
             </A>
-            . Technologien wähle ich aufgrund der Ausgangslage und Anforderungen
-            des Projekts aus.
+            .
           </p>
           <p>
             Für die serverseitige Programmierung von unternehmenskritischen
@@ -79,14 +83,17 @@ export default function About() {
             Web Apps entwickle ich basierend auf <HW>Next.js</HW> und{" "}
             <HW>React</HW>.
           </p>
-          <p>Für Mobile Apps bevorzuge ich React Native.</p>
+          <p>
+            Für Mobile Apps bevorzuge ich <HW>React Native</HW>.
+          </p>
           <p>
             Wenn es schnell gehen soll, beim Rapid Prototyping oder für Minimal
             Viable Products, setzte ich auf <HW>Backend-as-a-Service</HW>{" "}
             Technologien wie <HW>Supabase</HW>.
           </p>
           <p>
-            Games entwickle ich basierend auf der <HW>Unity</HW> Game Engine.
+            Games entwickle ich basierend auf der <HW>Godot</HW> oder{" "}
+            <HW>Unity</HW> Game Engine.
           </p>
         </Section>
       </Container>
@@ -120,7 +127,7 @@ export default function About() {
           <Section>
             <Testimonial
               authorRole="Partner bei crossmind inc."
-              imageAuthor="/images/andi.jpg"
+              imageAuthor="/images/andi.webp"
               text={
                 <>
                   Dominique ist ein{" "}

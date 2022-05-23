@@ -6,8 +6,8 @@ export default function Testimonials() {
     <div className="space-y-10">
       <Testimonial
         authorRole="Head of Digital Product Management, Die Schweizerische Post"
-        imageAuthor="/images/flo.jpg"
-        imageCustomer="/images/logo-post.png"
+        imageAuthor="/images/flo.webp"
+        imageCustomer="/images/logo-post.webp"
         text={
           <>
             Bei der Umsetzung unseres Innovationsprojektes hat uns Dominique
@@ -29,8 +29,8 @@ export default function Testimonials() {
       />
       <Testimonial
         authorRole="Senior Partner, INNOArchitects"
-        imageAuthor="/images/daniel.jpg"
-        imageCustomer="/images/logo-ia.png"
+        imageAuthor="/images/daniel.webp"
+        imageCustomer="/images/logo-ia.webp"
         text={
           <>
             Dominique erarbeitet in einem{" "}
