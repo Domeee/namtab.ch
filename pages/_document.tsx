@@ -34,7 +34,7 @@ export default function MyDocument() {
         />
         <meta
           name="description"
-          content="Ich unterstütze Unternehmen bei der Entwicklung von Web & Mobile Apps sowie Games."
+          content="Digitale Lösungen mit Fokus aufs Wesentliche: Kunden, Wirtschaftlichkeit und Freude"
         />
         <link rel="icon" href="/images/favicon.ico" />
         <link rel="canonical" href="https://namtab.ch" />
@@ -45,7 +45,7 @@ export default function MyDocument() {
         />
         <meta
           property="og:description"
-          content="Ich unterstütze Unternehmen bei der Entwicklung von Web & Mobile Apps sowie Games."
+          content="Digitale Lösungen mit Fokus aufs Wesentliche: Kunden, Wirtschaftlichkeit und Freude"
         />
         <meta
           property="og:image"
@@ -59,7 +59,7 @@ export default function MyDocument() {
         />
         <meta
           name="twitter:description"
-          content="Ich unterstütze Unternehmen bei der Entwicklung von Web & Mobile Apps sowie Games."
+          content="Digitale Lösungen mit Fokus aufs Wesentliche: Kunden, Wirtschaftlichkeit und Freude"
         />
         <meta
           name="twitter:image"
