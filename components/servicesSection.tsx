@@ -13,11 +13,6 @@ export default function ServicesSection() {
     <>
       <h6 className="pb-6 text-purple-400">dienstleistungen</h6>
       <div className="space-y-12">
-        <p className="text-purple-200">
-          Benötigst du Unterstützung bei deinem Software-Entwicklungsvorhaben?
-          Als freischaffender Software Entwickler unterstütze ich dich sehr
-          gerne dabei.
-        </p>
         <div>
           <h2 className="text-white">Software Entwicklung</h2>
           <dl className="space-y-5">
