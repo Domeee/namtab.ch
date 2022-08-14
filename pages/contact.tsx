@@ -20,8 +20,8 @@ export default function Contact() {
             <dt className="sr-only">Adresse</dt>
             <dd>
               <p>Namtab GmbH</p>
-              <p>Eggasse 42b</p>
-              <p>3076 Worb</p>
+              <p>Unterdorfstrasse 5</p>
+              <p>3072 Ostermundigen</p>
             </dd>
           </div>
           <div className="mt-6">
