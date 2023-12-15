@@ -27,31 +27,6 @@ export default function Testimonials() {
         author="Florian Thut"
         customer="Die Schweizerische Post"
       />
-      <Testimonial
-        authorRole="Senior Partner, INNOArchitects"
-        imageAuthor="/images/daniel.webp"
-        imageCustomer="/images/logo-ia.webp"
-        text={
-          <>
-            Dominique erarbeitet in einem{" "}
-            <HighlightWhite>hoch&nbsp;interdisziplinären</HighlightWhite>,
-            dynamischen und agilen Umfeld MVP Prototypen zur Validierung von
-            Produktideen und bringt diese in die Incubation und Pilotierung
-            direkt am Markt. Als Full Stack Entwickler und Architekt übernimmt
-            Dominique die <HighlightWhite>Verantwortung</HighlightWhite> für die
-            technische Umsetzung und ist jeder Zeit in der Lage bei allen
-            Aspekten im Gesamtprojektteam Inputs zu leisten und wird so auch
-            <HighlightWhite>sehr&nbsp;geschätzt</HighlightWhite>. Unsere Kunden
-            sind <HighlightWhite>begeistert</HighlightWhite> von der schnellen
-            und zielgerichteten Realisierung ihrer Themen als digitale Lösungen.
-            Wir schätzen Dominique als hilfsbereiten, erfahrenen und
-            pragmatischen Teamplayer und <HighlightWhite>freuen</HighlightWhite>{" "}
-            uns sehr auf die weitere Zusammenarbeit.
-          </>
-        }
-        author="Daniel Ledermann"
-        customer="INNOArchitects"
-      />
     </div>
   );
 }

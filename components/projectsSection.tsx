@@ -112,20 +112,5 @@ const projects = [
     ),
     roles: ["Game Designer", "Game Developer"],
     labels: ["Game Design", "Game Dev", "Unity"],
-  },
-  {
-    name: "crowdie",
-    image: "/images/crowdie.webp",
-    title: "Crowdie",
-    description: (
-      <span>
-        Von der Idee zu den ersten zehn Kunden in 29 Tagen. Crowdie ist ein
-        Pilotprojekt der <H>Post&nbsp;CH&nbsp;AG</H> und testet die spontane
-        Abholung von Brief- und Paketpost bei KMU&apos;s durch offizielle
-        Partner.
-      </span>
-    ),
-    roles: ["CTO", "Lead Software Engineer"],
-    labels: ["MetorJS", "JavaScript", "React", "Lean Startup"],
-  },
+  }
 ];
